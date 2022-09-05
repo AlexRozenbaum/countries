@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/lodash@4.17.21/lodash.min.js"></script>
+    <script type="module" src="js/appCountry.js" defer></script>
+</head>
+
+<body>
+    <header class="container-fluid p-2 bg-light">
+        <nav class="container">
+            <div class="row">
+                <div class="col-auto logo">
+                    <h2>My ATLAS</h2>
+                </div>
+                <div>
+                    <a href="country.html?code=USA " class="p-1 ">USA |</a > 
+                        <a href="country.html?code=ISR " class="p-1 ">ISR |</a >
+                            <a href="country.html?code=UKR" class="p-1 ">UKR |</a >
+                                <a href="country.html?code=RWA" class="p-1 ">RWA |</a >
+                                    <a href="country.html?code=UGA" class="p-1 ">UGA </a >
+                </div>
+                <div class="col-md-4 d-flex">
+                    <input placeholder="search for country..." type="text" id="id_input" class="form-control">
+                    <button id="search_btn" class="btn btn-dark">Search</button>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container-fluid py-4">
+        <div class="container">
+            <h2 class="text-center">List of countries:</h2>
+            <div id="id_loading" class="loading text-center">
+                <img src="images/loading.gif" alt="loading">
+                <p class="display-3">Loading...</p>
+            </div>
+            <div id="id_row" class="row">
+                <!-- <div class="col-md-4 p-2">
+          <article class="p-2 shadow overflow-hidden">
+            <img src="https://m.media-amazon.com/images/M/MV5BNGYyZGM5MGMtYTY2Ni00M2Y1LWIzNjQtYWUzM2VlNGVhMDNhXkEyXkFqcGdeQXVyMTMxODk2OTU@._V1_SX300.jpg" alt="pic"  class="w-25 float-end ms-2">
+            <h2>Rambo</h2>
+            <div>Year:1988</div>
+            <a href="#" class="btn btn-warning">More info</a>
+                    </article>
+                </div> -->
+
+            </div>
+            <!-- <div> <iframe src="http://maps.google.com/maps?q=25.3076008,51.4803216&z=5&output=embed" height="450" width="600"></iframe>
+            </div> -->
+            </div>
+            </main>
+</body>
+
+</html>
